@@ -1,0 +1,29 @@
+<view>
+       <view class="item">
+       <label class="title">我的地址</label>
+       <text class="maptext">{{mapText}}</text>
+       </view>
+
+       <view class="item">
+       <label class="title">类型</label>
+       {{type=="stop"?"停车点":"出租点"}}
+       </view>
+       <view class="item">
+       <label class="title">说明</label>
+       {{explain}}
+       </view>
+
+       <view class="item">
+       <label class="title">联系方式</label>
+      {{contact}}
+       </view>
+</view>
+
+<button class="tube_btn" bindtap="tubeBtn" type="warn"> 管理员 </button>
+
+
+<modal hidden="{{hiddenmodalput}}" title="请输管理员密码" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='password' placeholder="请输入密码密码" bindinput="confirmPass"/>  
+</modal>
+
+

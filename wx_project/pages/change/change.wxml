@@ -1,0 +1,27 @@
+<view>
+       <view class="item">
+       <label class="title">我的地址</label>
+       <text class="maptext" bindtap="mapChange">{{maptext}}</text>
+       </view>
+
+       <view class="item">
+       <label class="title">类型</label>
+        <input class="input_text" bindinput="inputType" value="{{typetext}}"/>
+       </view>
+       
+       <view class="item">
+       <label class="title">车体信息</label>
+       <input class="input_text" bindinput="inputExplain"  value="{{explain}}"/>
+       </view>
+
+       <view class="item">
+       <label class="title">联系方式</label>
+       <input class="input_text" bindinput="inputContact" value="{{contact}}"/>
+       </view>
+</view>
+
+ <view class="btn_two">
+  <button type="warn" class="primary" bindtap="deleteMapChange"> 删除 </button>
+  <button type="primary" class="warn" bindtap="updateMapChange"> 修改 </button>
+ </view>
+

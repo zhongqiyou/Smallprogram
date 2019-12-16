@@ -1,0 +1,13 @@
+create table tab_wx(
+    `id` int unsigned auto_increment primary key,
+    `mapText` varchar(80) not null,
+    `latitude` varchar(50) not null,
+    `longitude` varchar(50) not null,
+    `type` varchar(50) not null,
+    `explain` varchar(50) not null,
+    `contact` varchar(50) not null
+);
+
+
+小程序的提示输入设置
+https://www.cnblogs.com/xuzhengzong/p/7975525.html

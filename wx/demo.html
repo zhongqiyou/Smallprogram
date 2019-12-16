@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <form>
+        mapText<input type="text"><br>
+        latitude<input type="text"><br>
+        longitude<input type="text"><br>
+        type<input type="text"><br>
+        explain<input type="text"><br>
+        contact<input type="text"><br>
+            <input type="button" value="提交">
+      </form>
+</body>
+<script>
+        var input = document.querySelectorAll("input");
+      
+      input[6].onclick = function(){
+        var xhr = new XMLHttpRequest();
+        // xhr.open("get",`insert.php?mapText=${input[0].value}&latitude=${input[1].value}&longitude=${input[2].value}&type=${input[3].value}&explain=${input[4].value}&contact=${input[5].value}`);
+        // xhr.open("get",`select.php`);
+        // xhr.open("get",`select_detail.php`);
+        xhr.open("get",`select_like.php`);
+
+        xhr.send(null);
+        xhr.onreadystatechange = function(){
+        if(xhr.status == 200 && xhr.readyState == 4){
+           console.log(xhr.responseText);
+        }
+        }
+      }
+       
+        
+
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<view wx:if="{{swi}}">
+       <view class="item">
+       <label class="title">我的地址</label>
+       <text class="maptext" bindtap="ampChange">{{mapText}}</text>
+       </view>
+
+       <view class="item">
+       <label class="title">类型</label>
+      <radio-group class="radio_group" bindchange="typeChange">
+                  <radio value="out" checked="true">
+                      <text>出租点</text>
+                  </radio>
+                    <radio value="stop">
+                      <text>停车点</text>
+                  </radio>
+                  
+        </radio-group>
+       </view>
+       
+       <view class="item">
+       <label class="title">车体信息</label>
+       <input class="input_text" bindinput="inputExplain" placeholder="车标/车型信息"/>
+       </view>
+
+       <view class="item">
+       <label class="title">联系方式</label>
+       <input class="input_text" bindinput="inputContact" placeholder="填写维修联系方式"/>
+       </view>
+
+        <view class="item-btn" bindtap="btnSubmit">发布信息</view>
+</view>
+
+<view wx:if="{{!swi}}">
+       <view class="res_text">
+        <icon  type="success" size="24" class="res_icon"/>
+       <text>恭喜你，发布成功</text>
+       </view>
+       <button type="primary" class="res_btn" bindtap="resBtn"> 返回首页 </button>
+</view>

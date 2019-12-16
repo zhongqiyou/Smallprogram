@@ -1,0 +1,29 @@
+.nav_container{
+  background: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+}
+.map{
+  width: 100%;
+  height: 100%;
+}
+.btns{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  line-height: 40px;
+  background: #03bbd5;
+}
+.btn{
+  text-align: center;
+  flex-grow: 1;
+  color: #fff;
+}
+.l_btn{
+  background: #ff9700;
+}

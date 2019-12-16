@@ -1,0 +1,45 @@
+page{
+  background: #eee;
+}
+.search_header{
+  background: #03bbd5;
+  overflow: hidden;
+}
+.input_search{
+  background: #fff;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+  line-height: 50px;
+  width: 75%;
+  border-radius:5px; 
+  font-size: 14px;
+}
+.header_text{
+line-height: 50px;
+float: right;
+margin-right: 15px;
+width: 10%;
+color: #fff;
+}
+.map_res{
+  background: #fff;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.map_res image{
+  width: 50px; 
+  height: 50px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.map_text view{
+  line-height: 30px;
+    color: #ff9700;
+      font-size:12px; 
+}
+.map_text text{
+  color: #777;
+  font-size:12px; 
+} 

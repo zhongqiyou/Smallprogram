@@ -1,0 +1,44 @@
+page{
+  background:#eee;
+}
+.item{
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: #777;
+  overflow: hidden;
+  background: #fff;
+}
+
+.title{
+  padding-left:10px;
+  width: 90px;
+  float: left;
+}
+.radio_group{
+  float: left;
+}
+.input_text{
+  height: 50px;
+  float: left;
+}
+
+.maptext{
+  display: block;
+  margin-top:10px;
+  line-height: 30px; 
+}
+
+.primary , .warn{
+  width: 40%;
+}
+.primary{
+float: left;
+}
+.primary{
+float: right;
+margin-right: 7%;
+}
+.btn_two{
+  overflow: hidden;
+  margin-top:20px; 
+}

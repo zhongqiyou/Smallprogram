@@ -1,0 +1,12 @@
+<view class="search_header">
+       <input class="input_search" bindinput="inputSearch" placeholder="位置附近的出租/停车点" />
+       <text class="header_text" bindtap="searchKeyWord">搜索</text>
+</view>
+
+<view wx:for="{{mapres}}"  wx:key="id" class="map_res" bindtap="mapTextUpdate" data-id="{{item.id}}">
+    <image   src="/static/{{item.type}}.png"></image>
+    <view class="map_text">
+    <view>{{item.mapText}}</view>
+    <text>{{item.type == "out"?"[出租点]":"[停车点]"}}-----故障维修联系：{{item.contact}}</text>
+    </view>
+</view>

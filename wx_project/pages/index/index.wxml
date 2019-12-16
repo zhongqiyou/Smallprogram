@@ -1,0 +1,12 @@
+<view class="nav_container">
+<map id="myMap" markers="{{markers}}" bindmarkertap="marIdChange" bindcontroltap="controltap" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" class="map" show-location controls="{{controls}}"></map>
+</view>
+
+<view class="btns">
+    <view class="btn l_btn">
+    <navigator url="/pages/logs/logs">发布</navigator>
+    </view>
+    <view class="btn">
+    <navigator url="/pages/search/search">搜索</navigator>
+    </view>
+</view>
